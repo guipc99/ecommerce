@@ -1,5 +1,5 @@
 <!---Evento-->
-<form [formGroup]="meuFormuser" (submit)="onSubmit()">
+<form [formGroup]="meuFormuser" (submit)="onSubmit()" style="color: whitesmoke;">
     <div class="mb-3">
       <label for="exampleInputName1" class="form-label">Nome</label>
       <input
@@ -20,7 +20,7 @@
         aria-describedby="emailHelp"
         formControlName="email"
       />
-      <div id="emailHelp" class="form-text">
+      <div id="emailHelp" class="form-text" style="color:green;">
         Nós não iremos compartilhar seu email com nínguem
       </div>
     </div>
@@ -110,7 +110,7 @@
       <input type="text" class="form-control" id="uf" formControlName="estado" />
     </div>
     </div>
-    <button type="submit" class="btn btn-primary" >
+    <button type="submit" class="btn btn-primary btn-lg" style="text-align: center; align-items: center;" >
       Enviar
     </button>
   </form>

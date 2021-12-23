@@ -1,3 +1,15 @@
 .div{
     background-image: 'https://images.wallpaperscraft.com/image/single/dogs_texture_lettering_135613_2560x1440.jpg';
 }
+.navbar{
+    color: #009966;
+    font-size: medium;
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Share Tech Mono', monospace;
+    opacity: 0.9;
+}
+#navbarSupportedContent{
+    color: #009966;
+    
+}

@@ -1,11 +1,17 @@
-
-
-  
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" [routerLink]="['/']" routerLinkActive="active"
-      >GuiStore</a
+    <a
+      class="navbar-brand"
+      [routerLink]="['/produtos']"
+      routerLinkActive="active"
     >
+      <img
+        src="https://www.pikpng.com/pngl/b/255-2558615_neon-cube-freetoedit-square-green-glow-light-augmented.png"
+        width="40px"
+        alt=""
+      />GuiStore</a
+    >
+
     <button
       class="navbar-toggler"
       type="button"
@@ -54,12 +60,18 @@
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/usuarios']" routerLinkActive="active"
+          <a
+            class="nav-link"
+            [routerLink]="['/usuarios']"
+            routerLinkActive="active"
             >Usuários</a
           >
         </li>
         <li class="nav-item">
-          <a class="nav-link" [routerLink]="['/usuarios/new']" routerLinkActive="active"
+          <a
+            class="nav-link"
+            [routerLink]="['/usuarios/new']"
+            routerLinkActive="active"
             >Cadastre-se</a
           >
         </li>
@@ -68,10 +80,10 @@
         <input
           class="form-control me-2"
           type="search"
-          placeholder="Search"
+          placeholder="Buscar"
           aria-label="Search"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
       </form>
     </div>
   </div>

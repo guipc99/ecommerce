@@ -1,0 +1,13 @@
+#select{
+    width: 200px;
+    margin-bottom: 10px;
+    border-width: 2px;
+    border-color: rgb(59, 54, 54);
+    font-size: 17px;
+    margin-left: 78%;
+  }
+  #fimCompra{
+      margin-top: 0%;
+      align-items: center;
+
+  }

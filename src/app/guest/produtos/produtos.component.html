@@ -1,21 +1,19 @@
+<button class="btn btn-success btn-lg " (click)="finalizarCompra()" id="fimCompra"> Finalizar Compra </button>
 <div class="container-fluid">
-
-  <button class="btn btn-primary" (click)="finalizarCompra()"> Finalizar Compra </button>
-
-  <select class="form-control" [(ngModel)]="categoriaSelected" (change)="onCategoriaChange()" >
-      <option value="-1">SELECIONE</option>
+  <select class="form-control" [(ngModel)]="categoriaSelected" (change)="onCategoriaChange()" id="select" >
+      <option value="-1">Filtrar produtos</option>
       <option *ngFor="let c of categorias" [value]="c.idCategoria">{{c.nome}}</option>
   </select>
 
   <div class='row'>
 
-      <div class='col-3' *ngFor="let dados of produtos" style="width: 18rem;margin-top: 10px;margin-left: 15px;">
+      <div class='col-3' *ngFor="let dados of produtos" style="width: 18rem;margin-top: 10px;margin-left: 15px;max-inline-size: 18rem;">
 
           <div class="card">
-              <img class="card-img-top" src="https://i.pinimg.com/474x/96/90/b4/9690b4c1eba5b490278bc47c99c37518.jpg"
+              <img class="card-img-top" src="https://findicons.com/files/icons/456/activity_monitor/512/matrix.png"
                   alt="fundo">
               <div class="card-body">
-                  <h5 class="card-title">{{ dados.nome }}</h5>
+                  <h5 class="success-card-title">{{ dados.nome }}</h5>
                   <ul class="list-group list-group-flush">
                       <li class="list-group-item">ID: {{ dados.idProduto }}</li>
                   </ul>
@@ -31,7 +29,7 @@
               <div class="card-body">
                   <p>R$ {{ dados.preco }}</p>
                   <input type="number" class="form-control input" (change)="onQuantidadeChange(dados, $event)" placeholder="Quantidade"  >
-                  <a href="#" class="btn btn-warning">Comprar </a>&nbsp;
+                  <a href="#" class="btn btn-success">Comprar </a>&nbsp;
 
               </div>
           </div>

@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .container{
-    background-color: brown;
+    opacity: 1.0;
     }
-.navbar navbar-expand-lg navbar-light bg-light{
-    background-color: crimson;
+.navbar {
+    color: #009966;
+}
+.bg{
+   background-image: url(https://cdn.wallpapersafari.com/84/22/Jz6bAs.gif);
 }
