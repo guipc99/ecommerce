@@ -1,0 +1,26 @@
+<table style=" background-color: ghostwhite;border-style: solid; border-collapse: separate;">
+    <tr>
+    <th>ID</th>
+    <th>Produto</th>
+    <th>Descrição</th>
+    <th>Preço</th>
+    </tr>
+    
+  <tr
+  *ngFor="
+    let dados of produtos">
+  <!---{{interpolação}}-->
+
+  <td>{{ dados.idProduto }}</td>
+  <td>{{ dados.nome }}</td>
+  <td>{{ dados.descricao }}</td>
+  <td>R$ {{ dados.preco}} </td>
+
+  <td>
+    <button class="btn btn-outline-primary "[routerLink]="['/admin/', dados.idProduto]">Editar</button>&nbsp;
+    <button class="btn btn-outline-danger"  (click)="onClickApagar(dados)">Apagar</button>
+  </td>
+</tr>
+</table>
+<div class="container" style="text-align: center;"><button class="btn btn-success" [routerLink]="['/admin/new']" routerLinkActive="active">Adicionar produto</button></div>
+

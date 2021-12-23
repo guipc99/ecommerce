@@ -1,0 +1,62 @@
+<h1 MarcaTexto style="text-align: center">Lista de usuários</h1>
+<div class="container" style="width: fit-content; text-align: center">
+  <table
+    class="table-container"
+    style="
+      border: rgb(102, 117, 117);
+      border-style: groove;
+      padding: 100%;
+      border-radius: 100%;
+      border-width: 10px;
+      border-top-left-radius: 10px;
+      letter-spacing: 1px;
+      place-content: center;
+    "
+  >
+    <tr>
+      <th>ID</th>
+      <th>Nome</th>
+      <th>Email</th>
+      <th>Nascimento</th>
+      <th>CPF</th>
+      <th>Telefone</th>
+      <th>Celular</th>
+      <th>Endereço</th>
+      <th>Ações</th>
+    </tr>
+
+    <tr *ngFor="let dados of usuarios">
+      <!---{{interpolação}}-->
+      <!----Para não aparecer 0-->
+      <td>{{ dados.id }}</td>
+      <td>{{ dados.nome }}</td>
+      <td>{{ dados.email }}</td>
+      <td>{{ dados.dataDeNascimento }}</td>
+      <td>{{ dados.cpf }}</td>
+      <td>{{ dados.telefone }}</td>
+      <td>{{ dados.celular }}</td>
+      <td>
+        <p *ngFor="let e of dados?.idEndereco">
+          {{ e.logradouro }}, {{ e.numero }}, {{ e.bairro }}, {{ e.cidade }},
+          {{ e.estado }}
+        </p>
+      </td>
+      <td>
+        <button class="btn btn-outline-danger" (click)="onApagarClick(dados)">
+          Deletar
+        </button>
+      </td>
+      <td><button  class="btn btn-outline-primary"
+        [routerLink]="['/usuarios/new', dados.id]">Editar</button></td>
+    </tr>
+  </table>
+</div>
+<div class="container col-6" style="text-align: center; size: 100px">
+  <button
+    class="btn btn-outline-success"
+    [routerLink]="['/usuarios/new']"
+    routerLinkActive=""
+  >
+    Adicionar
+  </button>
+</div>
