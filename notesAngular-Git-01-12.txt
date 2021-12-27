@@ -1,0 +1,60 @@
+Comandos
+
+-git      ==> verifica se o git está instalado na máquina
+-git clone + paste ==> clona o repositorio criado no gitHub
+-code .   ==> abre o visual code
+-git status  ==>
+-git add <nome do aquivo>  ==> versionando o arquivo
+-git add * ==> versionando de todos os  arquivo
+-git commit  -m "passar a mensagem" ==> joga as alterações do arquivo para o repositorio local
+-git push ==> envia os arquivos alterados no repositorio local para o repositorio remoto.
+git checkout => verifica a branch
+git checkout -b nome => cria a branch 
+git push --set-upstream origin cadastro-usuario
+git merge une as branchs, pega o conteudo de uma branch e inclui na branch atual.
+git checkout nomedabranch
+----deletar remote branch
+git push origin --delete feature-areas-de-atendimento 
+
+--- deletar branch local
+git branch -d feature-areas-de-atendimento 
+git pull - puxa as partes do arquivo que não tenho
+git revert id dos commits >>>> volta a versao desejada-
+---------------------------------COMANDOS ANGULAR---------
+ng serve - inicia o localhost do angular
+ng g c > NG-Chama o CLI G-Gera C-Novo componente
+--INTERPOLAÇÃO
+{{ variável }} >>> interpola ts e html, chama a variável do arquivo ts para o html 
+--PROPERTY BIND
+ATRIBUIR A PROPRIEDADE DE UM ELEMENTO A UMA VARIAVEL
+Exemplos 
+<p class="azul">Qual a cor desse parágrafo?</p>
+<!--As formas de chamar-->
+<p class="{{cor}}">Azul</p>
+
+<p [class] = "cor"> Parágrafo</p>
+----------------------------------------------------------------------------------------
+EVENT
+This.variavel = " >>> quando você quer declarar uma variavel fora de sua função
+interpolação
+property bi
+event bi
+2way data bi
+
+ria um novo componente: ng g c meu-primeiro ==>  g = generate c=component (este componente possui: css / 2.ts / html)
+
+
+Documentação: https://angular.io/guide/interpolation
+
+data binding ==> interligar o ts com html 
+1-Interpolação ==> direção unica do ts para o html operador: {{}} - - Unidirecional da fonte de dados para visualizar o destino
+2-Property Binding ==>A vinculação de propriedades no Angular ajuda a definir valores para propriedades de elementos ou diretivas HTML. Use a associação de propriedade para fazer coisas como a funcionalidade do botão de alternância, definir caminhos programaticamente e compartilhar valores entre os componentes.
+3-Event Binding  ==> direção unica do HTML para o ts operador: () - Unidirecional da visualização do destino  para a fonte de dados
+4-Two-way ==> Tipos de ligação diferentes de interpolação têm um nome de destino à esquerda do sinal de igual. O destino de uma associação é uma propriedade ou evento, que você coloca entre colchetes, []parênteses (), ou ambos [()],.
+
+A pontuação de ligação de [], (), [()], e o prefixo especifica o sentido do fluxo de dados.
+
+Use []para ligar da fonte à vista.
+Use ()para ligar da vista à fonte.
+Use [()]para vincular em uma sequência bidirecional de visualização à fonte para visualização.
+Coloque a expressão ou declaração à direita do sinal de igual entre aspas duplas "". Para obter mais informações, consulte Interpolação e instruções de modelo .
